@@ -48,3 +48,5 @@ const Home = () => {
     </LayoutWrapper>
   )
 }
+
+export default Home;
