@@ -1,10 +1,10 @@
-import type { ReactNode } from 'react'
-import { Footer } from './footer'
-import { Header } from './header'
+import type { ReactNode } from "react";
+import { Footer } from "./footer";
+import { Header } from "./header";
 
 type Props = {
-  children: ReactNode
-}
+  children: ReactNode;
+};
 
 export const LayoutWrapper = (props: Props) => {
   return (
@@ -17,5 +17,5 @@ export const LayoutWrapper = (props: Props) => {
         <Footer />
       </div>
     </div>
-  )
-}
+  );
+};

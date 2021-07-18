@@ -1,15 +1,15 @@
-import { Auth, Button, IconLogOut } from '@supabase/ui'
-import type { ReactNode } from 'react'
-import React from 'react'
-import { LayoutWrapper } from '../components/layoutWrapper'
-import { client } from '../lib/supabase'
+import { Auth, Button, IconLogOut } from "@supabase/ui";
+import type { ReactNode } from "react";
+import React from "react";
+import { LayoutWrapper } from "../components/layoutWrapper";
+import { client } from "../libs/supabase";
 
 type Props = {
-  children: ReactNode
-}
+  children: ReactNode;
+};
 
 const Container = (props: Props) => {
-  const { user } = Auth.useUser()
+  const { user } = Auth.useUser();
   if (user) {
     return (
       <div>
@@ -23,11 +23,11 @@ const Container = (props: Props) => {
           </Button>
         </div>
       </div>
-    )
+    );
   }
   // ログインしていない場合
-  return <>{props.children}</>
-}
+  return <>{props.children}</>;
+};
 
 const Home = () => {
   return (
@@ -38,7 +38,7 @@ const Home = () => {
             <div className="w-full sm:w-96">
               <Auth
                 supabaseClient={client}
-                providers={['github']}
+                providers={["github"]}
                 socialColors={true}
               />
             </div>
@@ -46,7 +46,7 @@ const Home = () => {
         </Container>
       </Auth.UserContextProvider>
     </LayoutWrapper>
-  )
-}
+  );
+};
 
 export default Home;
