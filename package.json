@@ -10,7 +10,7 @@
     "check-types": "tsc --noEmit",
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
     "test-all": "npm run lint check-types lint:fix",
-    "format": "prettier --write ./src/**/*.{js,ts,tsx}"
+    "format": "prettier --write ./src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "@supabase/supabase-js": "^1.19.0",
