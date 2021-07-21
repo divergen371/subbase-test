@@ -96,6 +96,16 @@ export const AddTitle: VFC<props> = (props) => {
                     }}
                   />
                 </div>
+                <div className="grid grid-cols-4 gap-2 mt-4">
+                  <div className="col-span-1 text-xl text-center">Author</div>
+                  <input
+                    className="w-full h-10 col-span-3 p-2 bg-white border border-gray-300 rounded shadow appearance-none hover:border-gray-700"
+                    value={author}
+                    onChange={(e) => {
+                      return setAuthor(e.target.value);
+                    }}
+                  />
+                </div>
                 <div className="flex justify-center mt-4">
                   <div className="w-32 p-2">
                     <Button
