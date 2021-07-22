@@ -1,5 +1,8 @@
 module.exports = {
   reactStrictMode: true,
+  images: {
+    domains: ["thumbnail.image.rakuten.jp", "cover.openbd.jp"],
+  },
   eslint: {
     dirs: [
       'src/',

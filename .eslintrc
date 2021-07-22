@@ -38,6 +38,7 @@
     "@typescript-eslint/ban-ts-comment": 1,
     "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "warn",
-    "prefer-const": "warn"
+    "prefer-const": "warn",
+    "use-isnan": "warn"
   }
 }
