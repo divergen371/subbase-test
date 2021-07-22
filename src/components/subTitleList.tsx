@@ -1,4 +1,4 @@
-import { AddSubtitle } from "./addSubTitle";
+import { AddSubtitle } from "./addSubTitle"
 import { SubtitleCard } from "./subtitleCard";
 import { Title } from "./titleList";
 import { subtitle } from "../pages/title";
